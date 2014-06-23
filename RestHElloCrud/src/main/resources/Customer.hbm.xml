@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN" 
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ <hibernate-mapping>
+     <class  name= "md.chisinau.pojo.Customers" table="CUSTOMERS">
+         <id name="ID" type="int" column="ID">
+             <generator class="increment"></generator>
+         </id>
+         <property name="fname" column="FNAME" type="string"></property>
+         <property name="lname" column="LNAME" type="string"></property>
+         <property name="age" column="AGE" type="int"></property>
+         <property name="sex" column="SEX" type="string"></property>
+     </class>
+ </hibernate-mapping>
